@@ -1,6 +1,16 @@
 {
   "hosting": {
-    "public": "build/public/browser",
-    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+    "public": "dist/angular-delicious-food/browser",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
   }
 }
