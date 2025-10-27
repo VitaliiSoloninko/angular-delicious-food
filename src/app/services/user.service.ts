@@ -34,6 +34,7 @@ export class UserService {
             `Welcome ${user.name}!`,
             'Login Successful'
           );
+          console.log(user);
         },
         error: (errorResponse) => {
           this.toastrService.error(errorResponse.error, 'Login Failed');

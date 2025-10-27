@@ -2,22 +2,24 @@
 @import url("https://fonts.googleapis.com/css?family=Quicksand:300,regular,500,600,700&display=swap");
 
 * {
-	box-sizing: border-box;
-}
-
-html {
-	font-size: 18px;
-}
-
-html,
-button {
-	font-family: "Quicksand", "sans-serif";
+  box-sizing: border-box;
 }
 
 body {
-	margin: 0;
+  margin: 0;
+}
+
+:root {
+  font-family: "Quicksand", "sans-serif";
+  font-size: 18px;
+  line-height: auto;
+  --main-color: #691ebe;
+  --main-hover-color: #b99bdc;
+  --dark-color: #263238;
+  --dark-hover-color: #1a2b33;
+  --white-color: #ffffff;
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }

@@ -1,131 +1,133 @@
 .container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-	margin: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+  gap: 1rem;
 }
 
-.container > * {
-	min-width: 25rem;
-	max-width: 40rem;
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    min-width: 100%;
+    padding: 1rem;
+  }
 }
 
 img {
-	border-radius: 3rem;
-	flex: 1 0;
-	object-fit: cover;
-	height: 30rem;
-	margin: 1rem;
+  border-radius: 1rem;
+  width: 50%;
+  flex: 1 0;
+  object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  img {
+    width: 100%;
+  }
 }
 
 .details {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	flex: 1 0;
-	padding: 3rem;
-	color: #000;
-	margin-left: 1rem;
-}
-
-.header {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0;
+  padding: 1rem;
+  color: #000;
 }
 
 .name {
-	font-size: 2rem;
-	font-weight: bold;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .favorite {
-	margin: 1rem 0 0 0;
-	color: #ff4d4d;
-	font-size: 2.5rem;
+  margin: 1rem 0 0 0;
+  color: #ff4d4d;
+  font-size: 2.5rem;
 }
 
 .favorite.not {
-	color: grey;
-	font-size: 2.5rem;
+  color: grey;
+  font-size: 2.5rem;
 }
 
 .origins {
-	display: flex;
-	flex-wrap: wrap;
-	margin: 0.5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0.5rem 0;
 }
 
 .origins span {
-	padding: 0.3rem 1rem;
-	font-size: 1.2rem;
-	margin: 0.5rem 0.5rem 0.5rem 0;
-	border-radius: 2rem;
-	background-color: whitesmoke;
-	color: gray;
+  padding: 0.3rem 1rem;
+  font-size: 1.2rem;
+  margin: 0.5rem 0.5rem 0.5rem 0;
+  border-radius: 2rem;
+  background-color: whitesmoke;
+  color: gray;
 }
 
 .tags {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	grid-area: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  grid-area: 1rem;
 }
 
 .tags a {
-	background-color: #f0f0f0;
-	color: #444;
-	padding: 0.3rem 1rem;
-	gap: 1rem;
-	margin: 0.2rem 0.2rem;
-	border-radius: 10rem;
-	font-weight: 500;
-	transition: all 0.3s ease 0s;
+  background-color: #f0f0f0;
+  color: #444;
+  padding: 0.3rem 1rem;
+  gap: 1rem;
+  margin: 0.2rem 0.2rem;
+  border-radius: 10rem;
+  font-weight: 500;
+  transition: all 0.3s ease 0s;
 }
 
 .tags a:hover {
-	background-color: #dcdbdb;
-	scale: 1.03;
-	color: #111;
-	cursor: pointer;
+  background-color: #dcdbdb;
+  scale: 1.03;
+  color: #111;
+  cursor: pointer;
 }
 
 .cook-time {
-	margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .cook-time span {
-	padding: 0.6rem 2rem 0.6rem 0;
-	border-radius: 10rem;
-	font-size: 1.3rem;
+  padding: 0.6rem 2rem 0.6rem 0;
+  border-radius: 10rem;
+  font-size: 1.3rem;
 }
 
 .price {
-	font-size: 1.8rem;
-	margin: 2rem 2rem 2rem 0;
-	font-weight: 500;
-	color: #00a400;
+  font-size: 1.8rem;
+  margin: 2rem 2rem 2rem 0;
+  font-weight: 500;
+  color: #00a400;
 }
 
 .price::before {
-	content: "Price: ";
-	color: darkgray;
+  content: "Price: ";
+  color: darkgray;
 }
 
 button {
-	color: white;
-	background-color: #ff4d4d;
-	border: none;
-	font-size: 1.2rem;
-	padding: 1rem;
-	border-radius: 10rem;
-	outline: none;
-	opacity: 0.8;
-	transition: all 0.4s ease 0s;
+  color: white;
+  background-color: #ff4d4d;
+  border: none;
+  font-size: 1.2rem;
+  padding: 1rem;
+  border-radius: 10rem;
+  outline: none;
+  opacity: 0.8;
+  transition: all 0.4s ease 0s;
 }
 button:hover {
-	cursor: pointer;
-	opacity: 1;
-	scale: 1.01;
+  cursor: pointer;
+  opacity: 1;
+  scale: 1.01;
 }
